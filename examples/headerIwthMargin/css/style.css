@@ -19,4 +19,5 @@ header nav ul li a {
   font-size: 20px;
   text-decoration: none;
   text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
