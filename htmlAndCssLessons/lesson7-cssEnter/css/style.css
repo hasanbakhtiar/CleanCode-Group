@@ -1,0 +1,43 @@
+body{
+    font-size: 10px;
+}
+
+
+/* 
+bu 
+bir css commentdir!
+ */
+ 
+h3{
+    color: cadetblue;
+}
+p{
+    color:white;
+    background-color: red;
+    /* background-color: #ff000050; */
+    /* hex 
+    0123456789abcdef
+    3 max 6 opacity 8
+     */
+
+
+     /* rgb red green blue  */
+     /* rgb red green blue alpha */
+     /* background-color: rgb(0, 0, 0); */
+     /* background-color: hwb(0 0% 0% / 0.1); */
+     /* min 0 - max 255 */
+
+     /* 1rem = 16px */
+     /* 1em = 16px */
+    font-size: 3em;
+    font-weight: 600;
+    font-weight: bolder;
+    font-style:oblique;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    letter-spacing: 100px;
+    line-height: 100px;
+    word-spacing: 100px;
+    text-align: center;
+    text-decoration: underline;
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,117,255,1) 100%); */
+}

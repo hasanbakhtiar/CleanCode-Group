@@ -1,0 +1,55 @@
+/* p:nth-child(2n+2){
+    color: red;
+} */
+/* p:nth-child(2){
+    color: red;
+} */
+
+/* li:nth-child(1){
+    color: red;
+} */
+
+/* .colorfull{
+    background-color: red;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+
+}
+
+#alone1{
+    color: green;
+    background-color: bisque;
+}
+
+#alone2{
+    color: green;
+    background-color: bisque;
+} */
+
+
+.boxOne{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* margin-top: 100px; */
+    /* padding-top: 100px; */
+}
+
+.boxTwo{
+    display: inline-block;
+
+    /* margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px; */
+        /* padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px; */
+    /* padding: 100px 10px 40px 30px; */
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
