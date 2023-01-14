@@ -1,0 +1,75 @@
+:root{
+    --iorigreen:#024430;
+   
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrapper .con{
+    width: 80%;
+    height: 100vh;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 10%;
+}
+header nav{
+    width: 50%;
+    
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a{
+    font-family: sans-serif;
+    color: var(--iorigreen);
+}
+header .right-bar{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .right-bar *{
+    margin-left: 10px;
+}
+
+header .right-bar i{
+    color: var(--iorigreen);
+}
+
+header .right-bar select, button{
+    border: none;
+}
+
+header .right-bar select{
+    border: none;
+    background-color: #fff;
+    color: var(--iorigreen);
+    font-family: sans-serif;
+}
+
+header .right-bar button{
+    background-color: var(--iorigreen);
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 5px;
+    width: 128px;
+    height: 49px;
+}

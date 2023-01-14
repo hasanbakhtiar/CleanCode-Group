@@ -1,0 +1,38 @@
+.offer *{
+    font-family: sans-serif;
+}
+.offer h1{
+    font-size: 48px;
+}
+
+.offer p{
+    font-size: 18px;
+
+}
+
+.card-con{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card-con .card{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 30%;
+    height: 313px;
+    border: 2px solid #cde2e7;
+    /* border-top-color: red;
+    border-top-style: solid; */
+    border-radius:5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-con .card .card-items{
+    width: 80%;
+    height: 290px;
+
+}
+
