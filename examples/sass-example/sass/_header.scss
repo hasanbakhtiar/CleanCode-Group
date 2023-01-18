@@ -1,0 +1,53 @@
+header{
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    @include between();
+    .logo{
+        width: 30%;
+        @include center();
+        h1{
+            font-family: sans-serif;
+            width: 50%;
+            height: 50px;
+            background-color: chocolate;
+            border-radius: 30px;
+            color: #fff;
+            @include center();
+        }
+    }
+    nav{
+        width: 70%;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                background-color: rgb(243, 96, 33);
+                padding: 10px;
+                border: 1.5px solid #000;
+                border-radius: 20px;
+                transition: 1s;
+                
+                &:hover{
+                    background-color: #000; 
+                    a{
+                        color: #fff;
+                        i{
+                            transform: rotate(-20deg);
+                        }
+                    }
+                }
+                a{
+                    color: #fff;
+                    i{
+                        transition: 1s;
+                    }
+                }
+            }
+
+           
+        }
+        
+    }
+}
