@@ -1,0 +1,44 @@
+.main-box{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    // flex-flow: column wrap;
+    // justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    // Note: This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
+
+    .box{
+        // width: 100px;
+        // height: 100px;
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        margin: 3px;
+        &:nth-child(1){
+            order: 2;
+            flex-grow: 3;
+        }
+        &:nth-child(2){
+            order: 4;
+            flex-grow: 3;
+        }
+        &:nth-child(3){
+            order: 2;
+            // flex-grow: 4;
+            align-self: center;
+
+            flex-shrink: 10;
+        }
+        &:nth-child(4){
+            order: 5;
+            flex-grow: 7;
+        }
+        &:nth-child(5){
+            order: 1;
+            align-self: center;
+            flex-grow: 1;
+        }
+    }
+}
