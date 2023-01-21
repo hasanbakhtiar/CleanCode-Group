@@ -1,0 +1,30 @@
+.hero-box {
+  position: relative;
+}
+.hero-box .box-con {
+  position: absolute;
+  z-index: 2;
+  width: 70%;
+  height: 70vh;
+  background-color: black;
+}
+.hero-box .box-con .main-box {
+  width: 50%;
+  height: 50vh;
+  background-color: green;
+}
+.hero-box .box-con .main-box .box {
+  top: 100px;
+  right: 100px;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.hero-box .other-box {
+  position: absolute;
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=style.css.map */
