@@ -1,0 +1,181 @@
+// body {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+// }
+// .box{
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+// margin: 20px;
+// transform: translateX(100px);
+// transform: translateY(100px);
+// transform: translate(100px,200px);
+
+// transform:rotate(41deg);
+// transform: scale(3);
+// transform: skew(20deg,100deg);
+// matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+// transform: matrix(2, -7, 0, 1, 100, 200);
+
+// transition-property: transform, background-color;
+// transition-duration: 1s;
+// transition-delay: 2s;
+// transition: transform 3s, background-color 10s;
+// transition: 1s;
+
+// }
+
+// .box:hover{
+//     transform: rotate(120deg);
+//     background-color: green;
+
+// }
+
+// .card {
+//   width: 300px;
+//   height: 300px;
+//   background-image: url("https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
+//   background-size: cover;
+//   background-position: center;
+//   .read-more {
+ 
+//     opacity: 0;
+//     width: 300px;
+//     height: 300px;
+//     background-color: rgba($color: #000000, $alpha: 0.5);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   transition: 1s;
+
+//     a {
+//       border: none;
+//       background-color: brown;
+//       color: #fff;
+//       padding: 20px 40px;
+//       text-decoration: none;
+//     }
+//   }
+
+
+//   &:hover{
+//     .read-more{
+//         opacity: 1;
+//         z-index: 2;
+//     }
+//   }
+// }
+
+
+// .new-box{
+//     position: relative;
+//     width: 100px;
+//     height: 300px;
+//     background-color: red;
+
+//     &::after{
+//         position: absolute;
+//         left: 0px;
+//         content: "";
+//         display: block;
+//         width: 100px;
+//         height: 0px;
+//         background-color: rgba($color: #000000, $alpha: .5);
+//         transition: 1s;
+//     }
+
+//     &:hover::after{
+//         height: 300px;
+//     }
+    
+// }
+// h1::before{
+//     content:" How a u ";
+// }
+
+// body {
+//     padding-top: 10px;
+//     background: #f7f7f7;
+//     perspective: 800px;
+//   }
+  
+//   .wrap {
+//     float: left;
+//     position: relative;
+//     margin: 0 auto;
+//     width: 350px;
+//     height: 350px;
+//     transform-style: preserve-3d;
+//   }
+  
+//   .wrap div{
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 10px;
+//     background-position: 50% 50%;
+//     background-size: 150px; 
+//     background-repeat: no-repeat;
+//     box-shadow: inset 0 0 45px rgba(255,255,255,.3) 0 12px 20px -10px rgba(0,0,0,0.4);
+//     color: #fff;
+//     text-align: center;
+//     text-shadow: 0 1px rgba(0,0,0,0.3);
+//     font: bold 3em sans-serif;
+//     line-height: 350px;
+//   }
+  
+//   .front {
+//     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/270879/nasa-front.jpg");
+//     z-index: 100;
+//     backface-visibility: hidden;
+//   }
+  
+//   .back {
+//     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/270879/nasa-back.jpg");
+//     transform: rotateY(-180deg);
+//     backface-visibility: hidden;
+//   }
+  
+//   .wrap {
+//     transition: transform 1s ease-in;
+//   }
+  
+//   .wrap.rotateX:hover{
+//     transform: rotateX(65deg);
+//   }
+  
+//   .wrap.rotateY:hover{
+//     transform: rotateY(65deg);
+//   }
+  
+//   .wrap.rotateZ:hover {
+//     transform: rotateZ(65deg);
+//   }
+  
+//   .wrap.rotate3d:hover {
+//     transform: rotate3d(2,3,4,65deg);
+//   }
+  
+//   .wrap.translate3d:hover {
+//     transform: translate3d(100px, 100px, 200px);
+//   }
+  
+//   .wrap.translate-3d:hover {
+//     transform: translate3d(-100px, -100px, -200px);
+//   }
+  
+//   .wrap.scaleZ:hover {
+//     -webkit-transform: scaleZ(2) translateZ(-100px);
+//   }
+  
+//   .wrap.fullrotateX:hover {
+//     transform: rotateX(180deg);
+//   }
+  
+//   .wrap.fullrotateY:hover {
+//     transform: rotateY(180deg);
+//   }
+  
+  
