@@ -1,0 +1,38 @@
+// .box{
+//     position: relative;
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     // animation-name: action; //adi
+//     // animation-duration: 2s; //erzinde
+//     // animation-iteration-count: infinite; //sayi
+//     animation: action 5s infinite;
+
+// }
+
+// @keyframes action { //animasiyanin cagirilmasi
+//     // from{left: 0;}
+//     // to{left: 200px;}
+
+//     0%,100%{
+//         left: 0;
+//         top: 0;
+//         background-color: red;
+//     }
+//     25%{
+//         left: 300px;
+//         top: 0;
+//         background-color: yellow; 
+//     }
+//     50%{
+//         left: 300px;
+//         top: 300px;
+//         background-color: green; 
+//     }
+//     75%{
+//         left: 0px;
+//         top: 300px;
+//         background-color: blue; 
+//     }
+  
+// }
