@@ -1,0 +1,100 @@
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    *:not(button){
+        color: #fff;
+    }
+    button{
+        display: none;
+    }
+   
+    .logo{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        width: 70%;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px){
+  header{
+    nav{
+        display: none;
+    }
+    button{
+        display: block;
+    }
+  }
+}
+
+
+
+
+// max - 0px dan 700px dek
+// @media (max-width:700px){
+//     header{
+//         background-color: red;
+//     }
+// }
+
+// min - 900px den sonsuzluqadek
+// @media (min-width:900px){
+//     header{
+//         background-color: green;
+//     }
+// }
+
+// @media (min-width:1200px){
+//     header{
+//         background-color: yellow;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
