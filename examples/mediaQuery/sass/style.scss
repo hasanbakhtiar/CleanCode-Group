@@ -1,0 +1,25 @@
+.card-con{
+    height: auto;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        border: 1px solid #000;
+        width: 30%;
+        background-color: #fff;
+        padding: 7px;
+        height: auto;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:500px){
+   .card-con{
+    .card{
+        width: 100%;
+    }
+   }
+}
+
