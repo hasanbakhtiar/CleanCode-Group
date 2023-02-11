@@ -1,0 +1,18 @@
+.categories{
+    .row{
+        .col-12:nth-child(1){
+           .card{
+            &:hover{
+                background-color: red;
+            }
+           }
+        }
+        .col-12:nth-child(2){
+            .card{
+                &:hover{
+                    background-color: green;
+                }
+               }
+        }
+    }
+}

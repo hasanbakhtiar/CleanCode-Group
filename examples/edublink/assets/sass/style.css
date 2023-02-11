@@ -1,0 +1,6 @@
+.categories .row .col-12:nth-child(1) .card:hover {
+  background-color: red;
+}
+.categories .row .col-12:nth-child(2) .card:hover {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */
