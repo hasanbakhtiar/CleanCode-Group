@@ -1,0 +1,38 @@
+body {
+  background-color: #333;
+}
+
+.submenu {
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  z-index: 3;
+}
+.submenu::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: block;
+  background-color: blue;
+  width: 0px;
+  height: 40px;
+  z-index: -1;
+  transition: 1s;
+  transition-delay: 1s;
+}
+.submenu:hover::after {
+  width: 250px;
+  transition-delay: 0s;
+}
+.submenu:hover a {
+  color: #fff;
+}
+.submenu a {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
