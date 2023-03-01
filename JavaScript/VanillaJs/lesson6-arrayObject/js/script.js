@@ -74,37 +74,49 @@
 //       `Brand:${car[i].title} | Model: ${car[i].model} | Color: ${car[i].color}`
 //     );
 //   }
-// }const car = [
-//   {
-//     title: "BMW",
-//     model: "X5",
-//     color: ["yellow", "orange", "black"],
-//     newCar: false,
-//     year: 2021,
-//     // country:"England"
-//   },
-//   {
-//     title: "Mercedes",
-//     model: "s500",
-//     color: "black",
-//     newCar: true,
-//     year: 2023,
-//   },
-//   {
-//     title: "Audi",
-//     model: "a5",
-//     color: "blue",
-//     newCar: false,
-//     year: 1990,
-//   },
-//   {
-//     title: "Lada",
-//     model: "06",
-//     color: "orange",
-//     newCar: true,
-//     year: 1981,
-//   },
-// ];
+// }
+
+const car = [
+  {
+    title: "BMW",
+    model: "X5",
+    color: ["yellow", "orange", "black"],
+    newCar: false,
+    year: 2021,
+    // country:"England"
+  },
+  {
+    title: "Mercedes",
+    model: "s500",
+    color: "black",
+    newCar: true,
+    year: 2023,
+  },
+  {
+    title: "Audi",
+    model: "a5",
+    color: "blue",
+    newCar: false,
+    year: 1990,
+  },
+  {
+    title: "Lada",
+    model: "06",
+    color: "orange",
+    newCar: true,
+    year: 1981,
+  },
+];
+
+const data = [];
+
+for( let i in car){
+    data.push(car[i].title)
+}
+
+
+console.log(data.sort());
+
 
 
 
@@ -114,7 +126,7 @@
 // console.log(total);
 
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(...fruits);
 // let text = fruits.join(" | ");
 
