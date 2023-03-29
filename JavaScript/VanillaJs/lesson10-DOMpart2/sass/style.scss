@@ -1,0 +1,44 @@
+@import 'dark';
+@import 'light';
+html{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav{
+        width: 70%;
+   
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+button{
+    border: none;
+    background-color: cadetblue;
+}
+
+
+.show{
+    transform: translateX(0px);
+    
+}
+
+
+menu{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    transform: translateX(300px);
+    transition: 1s;
+
+}
