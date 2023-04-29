@@ -1,0 +1,6 @@
+The keystone of AJAX is the XMLHttpRequest object. <br>
+<br><br>
+Create an XMLHttpRequest object<br>
+Define a callback function<br>
+Open the XMLHttpRequest object<br>
+Send a Request to a server<br>
