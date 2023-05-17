@@ -13,6 +13,8 @@ class Login extends Component {
       alertStyle: "",
       inputMail: "",
       inputPass: "",
+      inputType:"password",
+      icon:"fa-solid fa-eye"
     };
   }
 
@@ -59,17 +61,34 @@ class Login extends Component {
                   }}
                 />
               </div>
-              <div className="mb-3">
-                <label className="form-label">Password</label>
-                <input
-                  type="password"
-                  className="form-control"
+
+                  <label className="form-label">Password</label>
+                <div className="input-group mb-3">
+                  <input
+
+                  type={this.state.inputType}
                   value={this.state.inputPass}
-                  onChange={(e) => {
+                   onChange={(e) => {
                     this.setState({ inputPass: e.target.value });
+                  }} className="form-control"   />
+                  <button className="btn btn-outline-secondary" type="button" 
+                  onClick={()=>{
+                    if (this.state.icon === "fa-solid fa-eye") {
+                        this.setState({
+                          inputType:"text",
+                          icon:"fa-solid fa-eye-slash"
+                        })
+                    }else{
+                      this.setState({
+                        inputType:"password",
+                        icon:"fa-solid fa-eye"
+                      })
+                    }
                   }}
-                />
-              </div>
+                  ><i className={this.state.icon}></i></button>
+                </div>
+
+             
 
               <button type="submit" className="btn btn-primary">
                 Login
