@@ -5,12 +5,13 @@ class Search extends Component {
     constructor(){
         super();
         this.state={
-            keyword:""
+            keyword:null
         }
     }
     searchSubmit=e=>{
         e.preventDefault();
         this.props.formData(this.state.keyword);
+        this.setState({keyword:""})
     }
     render() {
         return (
@@ -19,6 +20,7 @@ class Search extends Component {
                    <form onSubmit={this.searchSubmit}>
                    <InputGroup className="mb-3">
                         <Form.Control
+                        value={this.state.keyword}
                             placeholder="Enter username"
                             onChange={e=>{this.setState({
                                 keyword:e.target.value

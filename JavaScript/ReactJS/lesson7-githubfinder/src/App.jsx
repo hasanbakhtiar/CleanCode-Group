@@ -9,13 +9,15 @@ class App extends Component {
   constructor(){
     super();
     this.state={
-      users:[]
+      users:[],
+      screen:"d-none"
     }
   }
 
   userFetch=(comingkeyword)=>{
       axios.get(`https://api.github.com/search/users?q=${comingkeyword}`)
-      .then(res=>this.setState({users:res.data.items}))
+      .then(res=>this.setState({users:res.data.items,
+      screen:"d-block"}))
   }
   
   render() {
@@ -24,7 +26,7 @@ class App extends Component {
         <Header />
         <Container>
           <Search formData={this.userFetch}/>
-          <UserList senddata={this.state.users} />
+          {this.state.users.length===0?<div className={this.state.screen}><img src="https://media4.giphy.com/media/l2R06FEpVRk6IroNq/giphy.gif" alt="" /></div>:<UserList senddata={this.state.users} />}
         </Container>
       </>
     )
