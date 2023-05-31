@@ -1,38 +1,34 @@
 import React, { Component } from 'react'
 import { Container } from 'react-bootstrap'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Products from './pages/Products';
+import NotFoundPage from './pages/NotFoundPage';
 
 
-class Header extends Component{
-  render(){
-    return(
-      <ol>
-        <li><Link to="/">home</Link></li>
-        <li><Link to="/about">about</Link></li>
-        <li><Link to="/contact">contact</Link></li>
-      </ol>
-    )
-  }
-}
 
 
 
 class App extends Component {
   render() {
     return (
-      <Container>
-        <BrowserRouter>
+      <BrowserRouter>
         <Header />
+        <Container>
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
+            <Route path='/products' element={<Products />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
+            <Route path='*' element={<NotFoundPage  />}></Route>
           </Routes>
-        </BrowserRouter>
-      </Container>
+        </Container>
+        <Footer />
+      </BrowserRouter>
     )
   }
 }
