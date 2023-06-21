@@ -2,10 +2,12 @@ import React, { useContext, useState } from 'react'
 import SingleCard from '../components/SingleCard'
 import { Col, Row } from 'react-bootstrap'
 import { ProductContext } from '../context/ProductContext';
+import { LangContext } from '../context/LangContext';
 
 const ProductList = () => {
     const [product] = useContext(ProductContext);
     const [catData,setCatData] = useState(product);
+    const [lang] = useContext(LangContext);
     const filterResult = (catItem)=>{
             const result = product.filter(cd=>(
                 cd.category === catItem
@@ -14,7 +16,7 @@ const ProductList = () => {
     }
     return (
         <div>
-            <h1 className='my-5 text-center'>Product List</h1>
+            <h1 className='my-5 text-center'>{lang==='en'?"Product List":"Mehsul siyahisi"}</h1>
             <Row>
                 <Col sm={12} md={3}>
                     <ul className="list-group">

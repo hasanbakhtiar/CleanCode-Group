@@ -89,6 +89,7 @@ const Header = () => {
           <Button style={{textTransform:'uppercase'}} variant='success ms-3'
           onClick={()=>{
             lang==='en'?setLang('az'):setLang('en');
+            lang === 'en'? localStorage.setItem('lang','az'):localStorage.setItem('lang','en');
           }}
           >{lang}</Button>
 
