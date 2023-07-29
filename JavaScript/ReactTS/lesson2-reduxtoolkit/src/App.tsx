@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import AOS from "aos";
 import { useDispatch, useSelector } from "react-redux";
-import { add } from "./feature/todoSlice";
+import { add, del, removeAll } from "./feature/todoSlice";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -21,8 +21,13 @@ const App: React.FC = () => {
   const disptach = useDispatch();
   const todoSubmited = (e: React.FormEvent) => {
     e.preventDefault();
-    disptach(add(todoValue));
-    setTodoValue("");
+    if (!todoValue) {
+      alert("please, fill input!");
+    }else{
+        disptach(add(todoValue));
+        setTodoValue("");
+    }
+   
   };
   return (
     <Container>
@@ -54,9 +59,18 @@ const App: React.FC = () => {
                 data-aos="fade-left"
                 className="d-flex justify-content-between align-items-center"
               >
-                {item.title} <Button variant="danger">X</Button>
+                {item.title}{" "}
+                <Button
+                  variant="danger"
+                  onClick={() => {
+                    disptach(del(item.id));
+                  }}
+                >
+                  X
+                </Button>
               </ListGroup.Item>
             ))}
+            <Button variant="dark mt-4" onClick={()=>{disptach(removeAll())}}>Clear All</Button>
           </ListGroup>
         </Col>
       </div>

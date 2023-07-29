@@ -16,6 +16,15 @@ const todoSlice = createSlice({
         add:(state,action:PayloadAction<string>)=>{
             const newTodo = {id:crypto.randomUUID(),title:action.payload};
             state.push(newTodo);
+            
+        },
+        del:(state,action:PayloadAction<string>)=>{
+            return state.filter((todoData:any)=>(
+                 todoData.id !== action.payload
+            ))
+        },
+        removeAll:(state)=>{
+            return state = [];
         }
     }
 })
@@ -23,4 +32,4 @@ const todoSlice = createSlice({
 
 export default todoSlice.reducer;
 
-export const {add} = todoSlice.actions;
+export const {add,del,removeAll} = todoSlice.actions;
